@@ -9,7 +9,6 @@
 }
 
 .content {
-    background-color: rgba(0, 153, 204, 0.3);
     transition: linear .3s;
     padding: 10px;
     width:60%;
@@ -35,26 +34,33 @@
 
 
 .todoItemDivColor:hover {
-    background-color: rgba(0, 153, 204, 0.3);
+    background-color: #ffcd3a;
     cursor: pointer !important;
     transition: linear .3s;
 }
 
-.todoItemDivColor {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 30%, rgba(0, 153, 204, 0.7) 100%);
-    border-radius: 10px;
-    border: none;
-    /*box-shadow: 0px 0px 5px 0.2px orange;*/
-    margin: 5px;
-    padding: 10px;
+.todoItemNewDivColor {
+    background: #adb5bd;
 }
 
 .todoItemDoneDivColor {
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0.7) 30%,  rgba(0, 0, 0, 0.3) 100%);
+    background: #4dd4ac;
+}
+
+.todoItemDivColor {
     border-radius: 10px;
     border: none;
-    /*box-shadow: 0px 0px 5px 0.2px orange;*/
     margin: 5px;
     padding: 10px;
-    /*text-decoration: line-through;*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-togglebutton.p-button .p-button-icon-left, .p-togglebutton.p-button .p-button-icon-right{
+    color: #fff !important;
+}
+
+.field-radiobutton{
+    margin: 0 10px;
 }
